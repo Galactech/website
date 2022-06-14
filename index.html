@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="scss/_variables.scss" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -34,13 +35,16 @@
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#learn" class="nav-link">Contacts</a>
+              <a href="#meetTheTeam" class="nav-link">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="#questions" class="nav-link">Sponsor</a>
+              <a href="#sponsor" class="nav-link">Sponsor</a>
             </li>
             <li class="nav-item">
-              <a href="#meetTheTeam" class="nav-link">Donate</a>
+              <a href="#donate" class="nav-link">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a href="#FAQ" class="nav-link">FAQ</a>
             </li>
           </ul>
         </div>
@@ -54,7 +58,7 @@
         <div class="d-sm-flex align-items-center justify-content-between">
           <div>
             <h1>
-              Paving the Way in <span class="text-warning">Robotics</span>
+              Paving the Way in <span class="text-primary">Robotics</span>
             </h1>
             <p class="lead my-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
@@ -155,7 +159,7 @@
             />
           </div>
           <div class="col-md p-5">
-            <h2>Contact Us</h2>
+            <h2>What are we?</h2>
             <p class="lead">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
               error eveniet praesentium. Nulla, magnam eaque.
@@ -174,11 +178,11 @@
       </div>
     </section>
 
-    <section id="learn" class="p-5 bg-dark text-light">
+    <section id="sponsor" class="p-5 bg-dark text-light">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md p-5">
-            <h2>Fuel the Future</h2>
+            <h2>Sponsor</h2>
             <p class="lead">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
               error eveniet praesentium. Nulla, magnam eaque.
@@ -204,7 +208,7 @@
       </div>
     </section>
 
-    <section id="questions" class="p-5">
+    <section id="faq" class="p-5">
       <div class="container">
         <h2 class="text-center mb-4">FAQ</h2>
         <div class="accordion accordion-flush" id="questions">
@@ -339,6 +343,28 @@
             <div class="card bg-light">
               <div class="card-body text-center">
                 <img
+                  src="https://randomuser.me/api/portraits/men/1.jpg"
+                  class="rounded-circle mb-3"
+                  alt="Picture of Ethan"
+                />
+                <h3 class="card-title mb-3">Future Raiders Main Contact</h3>
+                <p class="card-text">Unfinished</p>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-discord text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-instagram text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-phone text-dark mx-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
                   src="https://randomuser.me/api/portraits/men/11.jpg"
                   class="rounded-circle mb-3"
                   alt="Picture of Ethan"
@@ -393,10 +419,10 @@
                   class="rounded-circle mb-3"
                   alt="Picture of Johaan"
                 />
-                <h3 class="card-title mb-3">Johaan Mannanal</h3>
+                <h3 class="card-title mb-3">Johaan M</h3>
                 <p class="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quia, odio.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nemo, eum perspiciatis. Magnam quod quia deleniti!
                 </p>
                 <a href="ContactInformation.html"
                   ><i class="bi bi-discord text-dark mx-1"></i
@@ -418,7 +444,7 @@
                   class="rounded-circle mb-3"
                   alt="Picture of Lena"
                 />
-                <h3 class="card-title mb-3">Lena</h3>
+                <h3 class="card-title mb-3">Lena Manjali</h3>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Accusamus quidem minus omnis corrupti sequi ratione!
@@ -443,7 +469,7 @@
                   class="rounded-circle mb-3"
                   alt="Picture of Lauren"
                 />
-                <h3 class="card-title mb-3">Lauren</h3>
+                <h3 class="card-title mb-3">Lauren Kim</h3>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Accusamus quidem minus omnis corrupti sequi ratione!
@@ -489,21 +515,21 @@
       </div>
     </section>
 
-    <!--<section class="p-5">
+    <section id="donate" class="p-5">
       <div class="container">
         <div class="row g-4">
           <div class="col-md">
             <h2 class="text-center mb-4">Contact Info</h2>
             <ul class="list-group list-group-flush lead">
               <li class="list-group-item">
-                <span class="fw-bold">Main Location</span> Lorem ipsum dolor sit
-                amet consectetur.
+                <span class="fw-bold">Fuel the Future</span> Lorem ipsum dolor
+                sit amet consectetur.
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </section>-->
+    </section>
 
     <footer class="p-5 bg-dark text-white text-center position relative">
       <div class="container">
