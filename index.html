@@ -54,9 +54,11 @@
 
     <!--Introduction-->
 
-    <section class="text-light p-5 p-lg-0 py-lg-5 text-center text-sm-start">
+    <section class="text-light text-center text-sm-start">
       <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
+        <div
+          class="d-sm-flex align-items-center p-5 p-lg-0 py-lg-5 justify-content-between"
+        >
           <div>
             <h2 class="text-dark">
               Paving the Way in
@@ -129,7 +131,7 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
                   odit. Voluptatibus laboriosam iste esse sapiente?
                 </p>
-                <a href="#" class="btn btn-dark">Read More</a>
+                <a href="#timeline" class="btn btn-dark">Read More</a>
               </div>
             </div>
           </div>
@@ -144,7 +146,13 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
                   odit. Voluptatibus laboriosam iste esse sapiente?
                 </p>
-                <a href="#" class="btn btn-primary">Read More</a>
+                <button
+                  class="btn btn-primary btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#enroll"
+                >
+                  Read More
+                </button>
               </div>
             </div>
           </div>
@@ -227,7 +235,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne"
               >
-                Accordion Item #1
+                What is FTC?
               </button>
             </h2>
             <div
@@ -236,9 +244,9 @@
               data-bs-parent="#FAQ"
             >
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate nihil amet blanditiis voluptatem. Perspiciatis
+                nesciunt, expedita magni error fugit ea.
               </div>
             </div>
           </div>
@@ -250,7 +258,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseTwo"
               >
-                Accordion Item #2
+                How much time do the members spend?
               </button>
             </h2>
             <div
@@ -259,10 +267,10 @@
               data-bs-parent="#FAQ"
             >
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                second item's accordion body. Let's imagine this being filled
-                with some actual content.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Recusandae, dicta placeat aut pariatur neque amet repudiandae,
+                deserunt quae exercitationem dolorem voluptatibus fugit
+                officiis. Porro officia facilis earum, cumque non obcaecati!
               </div>
             </div>
           </div>
@@ -274,22 +282,47 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseThree"
               >
-                Accordion Item #3
+                What skills can I learn from this?
               </button>
             </h2>
             <div
               id="flush-collapseThree"
               class="accordion-collapse collapse"
-              aria-labelledby="flush-headingThree"
               data-bs-parent="#FAQ"
             >
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos debitis repudiandae soluta porro voluptates optio
+                necessitatibus tempora rem aliquid voluptatibus fuga explicabo,
+                ad quis facilis accusamus cumque sunt animi ab fugiat nemo
+                temporibus. Quidem tenetur fugiat error totam doloremque natus.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+              >
+                Do I need to have previous experience to join?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQ"
+            >
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                nisi labore consectetur, recusandae cum, molestias, quo totam
+                eveniet ratione tempore commodi ex sunt doloremque reiciendis!
+                Atque quidem necessitatibus alias harum ipsam, illum culpa,
+                aspernatur non voluptate ab quam asperiores ullam, quis
+                similique magnam explicabo blanditiis deserunt exercitationem
+                fugiat commodi quas.
               </div>
             </div>
           </div>
@@ -476,18 +509,30 @@
     </section>
 
     <!--Donate-->
-    <section id="donate" class="p-5 text-center">
+    <section id="donate" class="p-5 text-center bg-dark text-light">
       <div class="container">
         <div class="row g-4">
           <div class="col-md">
             <h2 class="text-center mb-4">Donate</h2>
             <ul class="list-group list-group-flush lead">
-              <li class="list-group-item">
-                <span class="fw-bold">Fuel the Future</span> Lorem ipsum dolor
-                sit amet consectetur.
+              <li class="list-group-item bg-dark text-light">
+                <span class="fw-bold">Fuel the Future</span>
+                Lorem ipsum dolor sit amet consectetur.
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Timeline-->
+    <section id="timeline" class="p-5 text-center">
+      <div class="container">
+        <div class="row g-4">
+          <h2 class="text-center mb-4">Timline</h2>
+          <ul class="list-group list-group-flush lead">
+            A video That summarizes this team
+          </ul>
         </div>
       </div>
     </section>
@@ -510,7 +555,9 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">
+              Sponsor the Future Raiders
+            </h5>
             <button
               type="button"
               class="btn-close"
@@ -533,6 +580,57 @@
               </div>
               <div class="mb-3">
                 <label for="first-name" class="col-form-label">Email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">Phone: </label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Joining modal-->
+    <div class="modal fade" id="joining" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel2">
+              First Step into joining FTC
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fil out this form and we will get back to you!</p>
+            <form action="">
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label"
+                  >First Name</label
+                >
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
                 <input type="email" class="form-control" id="email" />
               </div>
               <div class="mb-3">
