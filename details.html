@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galactech Details Sheet</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="scss/_variables.scss" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="style.css" />
+    <title>Galactech Homepage</title>
   </head>
   <body>
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand">
@@ -41,118 +44,131 @@
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#robotics" class="nav-link mx-1">Robotics</a>
+              <a href="#meetTheTeam" class="nav-link mx-1">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="#FTC" class="nav-link mx-1">FTC</a>
+              <a href="#FAQ" class="nav-link mx-1">FAQ</a>
             </li>
             <li class="nav-item">
-              <a href="#galactech" class="nav-link mx-1">Galactech</a>
+              <a href="#sponsor" class="nav-link mx-1">Sponsor</a>
             </li>
             <li class="nav-item">
               <a href="#join" class="nav-link mx-1">Join</a>
+            </li>
+            <li class="nav-item">
+              <a href="#donate" class="nav-link mx-1">Donate</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="text-light text-center px-5 pt-5 text-sm-start">
+    <!--Introduction-->
+
+    <section class="text-light text-center text-sm-start">
       <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
+        <div
+          class="d-sm-flex align-items-center p-4 p-lg-0 py-lg-5 justify-content-between"
+        >
           <div>
-            <h1 class="pt-5 text-dark p-4">What is this all about?</h1>
+            <h1 class="text-dark mb-3">
+              Paving the Way in
+              <span class="text-primary"> <strong>Robotics</strong></span>
+            </h1>
+            <p class="lead my-5 text-dark">
+              <strong>
+                We are a team started in 2022, with great outlook. As a team of
+                6 hardworking individuals, we are striving to deliver the best
+                engineered robots
+              </strong>
+            </p>
+            <button
+              class="btn btn-primary btn-lg mx-1 my-3"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              <strong> Sponsor </strong>
+            </button>
+            <button
+              class="btn btn-primary btn-lg mx-2 my-3"
+              data-bs-toggle="modal"
+              data-bs-target="#joining"
+            >
+              <strong> Join </strong>
+            </button>
           </div>
           <img
-            class="img-fluid w-50 d-none d-sm-block p-5 rounded-pill"
-            src="confusedperson1.jpg"
-            alt="Confused Person - Photo by Ayo Ogunseinde on Unsplash"
+            class="img-fluid w-50 d-none d-sm-block rounded-3 mt-4 mx-3"
+            src="memberstogether1.png"
+            alt="Galactech Logo"
           />
         </div>
       </div>
     </section>
 
+    <!--Email Submittion-->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3mb-md-0">Sign Up For More Information</h3>
+
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Enter Email" />
+            <button class="btn btn-dark btn-lg" type="button">Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--Cards-->
-    <section class="p-5 bg-secondary">
+
+    <section class="p-4 bg-dark">
       <div class="container">
         <div class="row text-center g-4">
           <div class="col-md">
-            <div class="card bg-dark text-light">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-laptop"></i>
-                </div>
-                <h3 class="card-title mb-3">Robotics</h3>
-                <p class="card-text">
-                  Is the combination of important skills, like hardware, coding,
-                  and outreach. The combination of these skills will be refined
-                  to outperform other teams with the intensive of filling the
-                  robotics requirments.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="card bg-dark text-light">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-cpu"></i>
-                </div>
-                <h3 class="card-title mb-3">FTC</h3>
-                <p class="card-text">
-                  A division of robotics created with the nonprofit FIRST, along
-                  with FLL and FRC. FTC stands for FIRST Tech Challenge and
-                  builds medium sized robots with a medium sized group of high
-                  school students.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="card bg-dark text-light">
+            <div class="card bg-secondary text-light">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="bi bi-people"></i>
                 </div>
-                <h3 class="card-title mb-3">This Team</h3>
+                <h3 class="card-title mb-3">The Team</h3>
                 <p class="card-text">
-                  Many high schools offer the oppurtunity to join a FTC team
-                  representing the school. This team however is a private team,
-                  based on Renton Washington, and recruit members on an
-                  interview basis.
+                  A group of primarily high schoolers, that are interested in
+                  science, technology, and solving problems.
                 </p>
+                <a href="#meetTheTeam" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-plus-fill"></i>
+                </div>
+                <h3 class="card-title mb-3">Join</h3>
+                <p class="card-text">
+                  Join a group of talented, young, motivated people. Spend some
+                  time bringing ideas of the the future to today.
+                </p>
+                <a href="#join" class="btn btn-primary">Explore</a>
               </div>
             </div>
           </div>
           <div class="col-md">
-            <div class="card bg-dark text-light">
+            <div class="card bg-secondary text-light">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="bi bi-cash"></i>
                 </div>
                 <h3 class="card-title mb-3">Sponsor</h3>
                 <p class="card-text">
-                  You can sponsor this team, and fuel future innovators. Robot
-                  parts are exceedingly expensive, and require financial aid by
-                  anyone willing. If you are willing sponsor, you will get a
-                  shoutout, as listed later.
+                  Provide monetary benifits to a team of teenagers working hard
+                  to solve scince and engineering problems, while getting some
+                  return.
                 </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="card bg-dark text-light">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-person-plus"></i>
-                </div>
-                <h3 class="card-title mb-3">Join</h3>
-                <p class="card-text">
-                  You can join your local school team, or get in contact with us
-                  to help you find custom teams. You may also start an FTC team
-                  with friends. You may also qualify for joining this specific
-                  team Galactech.
-                </p>
+                <a href="#sponsor" class="btn btn-primary">Explore</a>
               </div>
             </div>
           </div>
@@ -160,162 +176,610 @@
       </div>
     </section>
 
-    <!--Robotics-->
-    <section id="robotics" class="p-5">
+    <!--Explanation of FTC/Robotics-->
+    <section id="details" class="p-5 bg-dark">
       <div class="container">
-        <div class="row align-items-center justify-content-between">
+        <div
+          class="row align-items-center justify-content-between bg-dark text-light"
+        >
           <div class="col-md">
             <img
-              src="robotics1.jpg"
-              class="img-fluid rounded-3"
-              alt="Robot looking up - Photo by Alex Knight on Unsplash"
+              src="cartoon-robot-hi.png"
+              class="img-fluid"
+              alt="Cartoon Robot"
             />
           </div>
           <div class="col-md p-5">
-            <h2>What is robotics about?</h2>
-            <p class="lead">
-              Is the combination of important skills, like hardware, coding, and
-              outreach. The combination of these skills will be refined to
-              outperform other teams with the intensive of filling the robotics
+            <h2>What are we?</h2>
+            <p class="lead mt-3">
+              We are a FTC team, striving to build the best robots that fill the
               requirments.
             </p>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea rem,
-              consequatur maxime aliquam officiis inventore sed fugit, est
-              tempora sapiente quo ratione corrupti libero temporibus. Error
-              expedita ullam corporis illum?
+            <p class="mt-4">
+              FTC is a division of robotics created by the organization FIRST.
+              This cultivates skills in teens needed for technoligically
+              advanced jobs in the future. Find out more about robotics, FTC,
+              and Galactech.
             </p>
+            <a href="details.html" class="btn btn-light mt-5">
+              <i class="bi bi-chevron-right"></i>Read More
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!--FTC-->
-    <section id="FTC" class="p-5 bg-dark text-light">
+    <!--Timeline
+    <section id="timeline" class="p-5 text-center">
+      <div class="container">
+        <div class="row g-4">
+          <h2 class="text-center mb-4">Timeline</h2>
+          <ul class="list-group list-group-flush lead">
+            A video That summarizes this team
+          </ul>
+          <iframe
+            id="timelinevideoframe"
+            title="Timeline of Robotics Team"
+            width="300"
+            height="200"
+            src="https://www.youtube.com/watch?v=iik25wqIuFo"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>-->
+
+    <!--Meet the Team-->
+    <section id="meetTheTeam" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Meet the Team</h2>
+        <p class="lead text-center text-white mb-5">
+          Our team is working hard to bring to you the future
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="galactechlogo.png"
+                  class="rounded-circle mb-3 w-50"
+                  alt="Logo"
+                />
+                <h3 class="card-title mb-3">Galactech Main Contact</h3>
+                <p class="card-text">
+                  This is the main point of contact. Can be used for
+                  partnerships/questions/etc
+                </p>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-phone text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-envelope text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-instagram text-dark mx-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="ethanprofile.png"
+                  class="rounded-circle mb-3 w-50"
+                  alt="Picture of Ethan"
+                />
+                <h3 class="card-title mb-3">Ethan Lee</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eius fugit ducimus soluta inventore qui?
+                </p>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-discord text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-instagram text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-phone text-dark mx-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="siddprofile1.png"
+                  class="rounded-circle mb-3 w-50"
+                  alt="Picture of Sidd"
+                />
+                <h3 class="card-title mb-3">Sidd Woddi</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus quidem minus omnis corrupti sequi ratione!
+                </p>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-discord text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-instagram text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-phone text-dark mx-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="johaanprofile1.png"
+                  class="rounded-circle mb-3 w-50"
+                  alt="Picture of Johaan"
+                />
+                <h3 class="card-title mb-3">Johaan Mannanal</h3>
+                <p class="card-text">
+                  14 year old boy, who is interested in coding, photography,
+                  magic, business, astrophysics, and finance. He also dabbles in
+                  working out, videography, and watching Marvel movies.
+                </p>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-discord text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-instagram text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-phone text-dark mx-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="lenaprofile1.png"
+                  class="rounded-circle mb-3 w-50"
+                  alt="Picture of Lena"
+                />
+                <h3 class="card-title mb-3">Lena Manjali</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus quidem minus omnis corrupti sequi ratione!
+                </p>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-discord text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-instagram text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-phone text-dark mx-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="laurenprofile1.png"
+                  class="rounded-circle mb-3 w-50"
+                  alt="Picture of Lauren"
+                />
+                <h3 class="card-title mb-3">Lauren Kim</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus quidem minus omnis corrupti sequi ratione!
+                </p>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-discord text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-phone text-dark mx-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="rhoneprofile.png"
+                  class="rounded-circle mb-3 w-50"
+                  alt="Picture of Rhone"
+                />
+                <h3 class="card-title mb-3">Rhone Eiler</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus quidem minus omnis corrupti sequi ratione!
+                </p>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-discord text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-phone text-dark mx-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Meet the Mentors-->
+    <section id="meetTheTeam" class="p-5 bg-secondary">
+      <div class="container">
+        <h2 class="text-center text-white">Meet the Mentors</h2>
+        <p class="lead text-center text-white mb-5">
+          The Group of people making this possible
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src=""
+                  class="rounded-circle mb-3 w-50"
+                  alt="Picture of Tarak Woddi"
+                />
+                <h3 class="card-title mb-3">Tarak Woddi</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus quidem minus omnis corrupti sequi ratione!
+                </p>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-envelope text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-phone text-dark mx-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="onnprofile1.png"
+                  class="rounded-circle mb-3 w-50"
+                  alt="Picture of Onn Lee"
+                />
+                <h3 class="card-title mb-3">Onn Lee</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus quidem minus omnis corrupti sequi ratione!
+                </p>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-envelope text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-phone text-dark mx-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="vishalprofile1.png"
+                  class="rounded-circle mb-3 w-50"
+                  alt="Picture of Vishal Mannanal"
+                />
+                <h3 class="card-title mb-3">Vishal Mannanal</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus quidem minus omnis corrupti sequi ratione!
+                </p>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-envelope text-dark mx-1"></i
+                ></a>
+                <a href="ContactInformation.html"
+                  ><i class="bi bi-phone text-dark mx-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Frequently Asked Questions-->
+    <section id="FAQ" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="FAQ">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+              >
+                What is FTC?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQ"
+            >
+              <div
+                class="accordion-body bg-secondary text-light rounded-bottom"
+              >
+                FTC stands for FIRST Tech Challenge. Teams of primarily high
+                schoolers make robots using multiple skills. These robots will
+                perform a specified task by the organization "FIRST". As teams
+                win rounds, they move up in ranks, aiming for winning the world
+                competition. Teams will be using leadership, coordination,
+                teamwork, software skills, hardware skills, and outreach skills.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+              >
+                If I joined FTC, how much time would I spend?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQ"
+            >
+              <div
+                class="accordion-body bg-secondary text-light rounded-bottom"
+              >
+                Building a robot is a difficult task, and mirrors a job. The
+                amount of time required varies greatly. This is due to factors
+                like team size, goal, age, and time of the year. It would
+                generally range from 6 hours a week to 60 hours.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+              >
+                What skills can I learn from this?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQ"
+            >
+              <div
+                class="accordion-body bg-secondary text-light rounded-bottom"
+              >
+                Robotics requires the initial skills of leadership, teamwork,
+                and hardwork. As your FTC experience progresses, you will learn
+                hardware and/or coding and/or outreach skills.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+              >
+                Do I need to have previous experience to join?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQ"
+            >
+              <div
+                class="accordion-body bg-secondary text-light rounded-bottom"
+              >
+                Many of the members of FTC have either done some sort of
+                robotics in the past, specifically FLL (FIRST Lego League). If
+                you dont have any experience in robotics whatsoever, this is
+                fine. Refining current knowledge of technology and using logic
+                will equip you with needed skills.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+              >
+                What are the age requirements to join?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQ"
+            >
+              <div
+                class="accordion-body bg-secondary text-light rounded-bottom"
+              >
+                The age requirements for FTC are 8th grade to 12th grade. Teams
+                can have 18+ mentors, and Galactech has a couple of them. They
+                guide the young and2 inexperienced team.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+              >
+                What is the average team size?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQ"
+            >
+              <div
+                class="accordion-body bg-secondary text-light rounded-bottom"
+              >
+                tbh idk
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSeven">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSeven"
+              >
+                What do I gain from sponsoring?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSeven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQ"
+            >
+              <div
+                class="accordion-body bg-secondary text-light rounded-bottom"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                nisi labore consectetur, recusandae cum, molestias, quo totam
+                eveniet ratione tempore commodi ex sunt doloremque reiciendis!
+                Atque quidem necessitatibus alias harum ipsam, illum culpa,
+                aspernatur non voluptate ab quam asperiores ullam, quis
+                similique magnam explicabo blanditiis deserunt exercitationem
+                fugiat commodi quas.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Sponsor-->
+    <section id="sponsor" class="p-5 bg-dark text-light">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md p-5">
-            <h2>What is FTC about?</h2>
-            <p class="lead">
-              A division of robotics created with the nonprofit FIRST, along
-              with FLL and FRC. FTC stands for FIRST Tech Challenge and builds
-              medium sized robots with a medium sized group of high school
-              students.
+            <h2>Sponsor</h2>
+            <p class="lead mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
+              error eveniet praesentium. Nulla, magnam eaque.
             </p>
-            <p>
+            <p class="mt-4">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea rem,
               consequatur maxime aliquam officiis inventore sed fugit, est
               tempora sapiente quo ratione corrupti libero temporibus. Error
               expedita ullam corporis illum?
             </p>
+            <a href="sponsor.html" class="btn btn-light mt-5">
+              <i class="bi bi-chevron-right"></i>Read More
+            </a>
           </div>
           <div class="col-md">
             <img
-              src="FTClikerobots1.jpg"
-              class="img-fluid rounded-3"
-              alt="FTC like robots - Photo by Jelleke Vanooteghem on Unsplash"
+              src="coder-clipart-8.jpg"
+              class="img-fluid"
+              alt="Person Coding"
             />
           </div>
         </div>
       </div>
     </section>
 
-    <!--Galactech-->
-    <section id="galactech" class="p-5">
+    <!--Join-->
+    <section id="join" class="p-5 bg-primary text-light">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-md">
-            <img
-              src="galactechlogo.png"
-              class="img-fluid rounded-3"
-              alt="Logo"
-            />
-          </div>
           <div class="col-md p-5">
-            <h2>What is Galactech all about?</h2>
-            <p class="lead">
-              Many high schools offer the oppurtunity to join a robotics team
-              representing the school. This team however is a private team, are
-              based on Renton Washington, and we recruit members on an interview
-              basis.
+            <img src="coderphoto1.png" class="img-fluid" alt="Person Coding" />
+          </div>
+          <div class="col-md">
+            <h2>Join</h2>
+            <p class="lead mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
+              error eveniet praesentium. Nulla, magnam eaque.
             </p>
-            <p>
+            <p class="mt-4">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea rem,
               consequatur maxime aliquam officiis inventore sed fugit, est
               tempora sapiente quo ratione corrupti libero temporibus. Error
               expedita ullam corporis illum?
             </p>
+            <a href="join.html" class="btn btn-light mt-5">
+              <i class="bi bi-chevron-right"></i>Read More
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!--Take Action by sponsoring-->
-    <section id="sponsor" class="p-5 bg-dark text-light text-center">
+    <!--Donate-->
+    <section id="donate" class="p-5 text-center">
       <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md p-5">
-            <h2>What Can You Do?</h2>
-            <p class="lead p-5">
-              Sponsoring this team, or other FTC teams, is equal to fueling the
-              future of robotics and innovation. Robot parts are exceedingly
-              expensive, and require financial aid by anyone willing.
-            </p>
-            <p class="px-5">
-              If you are willing to sponsor Galactech please click the button
-              and fill out the form below. This will put you in contact with our
-              team. Before you do so, you should check our page specifiying
-              advantages, and perks of sponsors. This is linked in the form.
-            </p>
-            <button
-              class="btn btn-primary btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#enroll"
-            >
-              Sponsor
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Take Action by joining-->
-    <section id="join" class="p-5 bg-secondary text-light text-center">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md p-5">
-            <p class="lead px-5">
-              You can join your school team, or get in contact with us to help
-              you find custom teams. You may also start an FTC team with
-              friends. You may also qualify for joining this specific team
-              Galactech.
-            </p>
-            <p class="p-5">
-              To act on any of these options, you may check click the button
-              below, and fill out the form. Putting you in contact with us will
-              give you oppurtunities to join FIRST Tech Challenge.
-            </p>
-            <button
-              class="btn btn-primary btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#joining"
-            >
-              Join FTC
-            </button>
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Donate</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Fuel the Future</span>
+                Lorem ipsum dolor sit amet consectetur.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!--Back to home button-->
-    <section id="backtohomebutton" class="p-5 bg-dark text-light text-center">
-      <a
-        href="index.html"
-        role="button"
-        class="btn btn-outline-info btn-lg py-3"
-      >
-        Back to Home</a
-      >
+    <!--Question/Suggestion Submittion-->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3mb-md-0">Type A Question Or Suggestion Here</h3>
+
+          <div class="input-group news-input">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Question or Suggestion"
+            />
+            <button class="btn btn-dark btn-lg" type="button">Send</button>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!--footer-->
+    <footer class="py-3 bg-dark text-white text-center position relative">
+      <div class="container">
+        <p class="lead pt-2">2022 Galactech FTC Team</p>
+      </div>
+    </footer>
 
     <!--Sponsor modal-->
     <div
@@ -329,7 +793,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">
-              Sponsor the Future Raiders
+              Sponsor Galactech
             </h5>
             <button
               type="button"
@@ -341,6 +805,7 @@
           <div class="modal-body">
             <p class="lead">Fil out this form and we will get back to you!</p>
             <a href="sponsor.html">Click this link first</a>
+
             <form action="">
               <div class="mb-3">
                 <label for="first-name" class="col-form-label"
@@ -392,7 +857,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <p class="lead">Fill out this form and we will get back to you!</p>
+            <p class="lead">Fil out this form and we will get back to you!</p>
             <a href="join.html">Click this link first</a>
             <form action="">
               <div class="mb-3">
