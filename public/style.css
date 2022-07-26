@@ -1,0 +1,53 @@
+body::before {
+  display: block;
+  content: "";
+  height: 35px;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20vh);
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.typing-indicator {
+  display: inline-block;
+  width: 2px;
+  background-color: black;
+  animation: blinkcursor 1s linear infinite;
+}
+
+@keyframes blinkcursor {
+  0%,
+  49% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.background-grow {
+  animation: grow 5s ease infinite alternate;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(150%);
+  }
+  100% {
+    transform: scale(200%);
+  }
+}
