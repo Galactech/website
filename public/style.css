@@ -51,7 +51,31 @@ body::before {
     transform: scale(200%);
   }
 }
+.purp {
+  color: rgb(125, 0, 255);
+}
+.purp-btn {
+  color: white;
+  background-color: rgb(125, 0, 255);
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-.p {
-  font-size: x-large;
+.purp-bg {
+  background-color: rgb(125, 0, 255);
+  border: none;
+}
+
+.purp-btn:hover {
+  border: none;
+  color: white;
+  background-color: rgb(140, 30, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.purp-btn:active {
+  border: none;
+  color: white;
+  background-color: rgb(68, 0, 135);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
