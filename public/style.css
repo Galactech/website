@@ -51,3 +51,7 @@ body::before {
     transform: scale(200%);
   }
 }
+
+.p {
+  font-size: x-large;
+}

@@ -9,12 +9,12 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.galactech.deno.dev" />
   <meta property="og:image" content="public/galactechlogo.png" />
+  <link rel="icon" href="/public/galactechlogoround.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <!-- <link rel="stylesheet" href="scss/_variables.scss" /> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="/public/style.css" />
-  <link rel="icon" href="/public/galactechlogo.png" style="border-radius: 50%;">
   <title>Galactech Homepage</title>
 </head>
 
@@ -23,7 +23,7 @@
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
     <div class="container">
       <a href="#" class="navbar-brand">
-        <img width="35" height="35" class="rounded-circle" src="/public/galactechlogo.png" alt="Galactech Logo" /></a>
+        <img width="40" height="40" class="rounded-circle" src="/public/galactechlogo.png" alt="Galactech Logo" /></a>
       <a href="#" class="navbar-brand">Galactech</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -55,7 +55,7 @@
   <!--Introduction-->
 
   <section class="text-light text-center text-sm-start mt-md-5 mt-lg-0">
-    <div class="container">
+    <div class="container px-0 py-5">
       <div class="d-sm-flex align-items-center p-4 p-lg-0 py-lg-5 justify-content-between">
         <div>
           <h1 class="text-dark mb-3">
@@ -64,21 +64,21 @@
               <strong data-typewrite="Robotics,Coding,Communication,Teamwork"></strong><span
                 class="typing-indicator">&nbsp;</span>
           </h1>
-          <p class="lead my-5 text-dark">
+          <p class="lead my-5 mx-3 text-dark">
             <strong>
               We are a team started in 2022, with great outlook. As a team of
               6 hardworking individuals, we are striving to deliver the best
               engineered robots
             </strong>
           </p>
-          <button class="btn btn-primary btn-lg mx-1 my-3" data-bs-toggle="modal" data-bs-target="#enroll">
-            <strong> Sponsor </strong>
+          <button class="btn btn-primary btn-lg mx-5 my-3" data-bs-toggle="modal" data-bs-target="#enroll">
+            Sponsor
           </button>
           <button class="btn btn-primary btn-lg mx-2 my-3" data-bs-toggle="modal" data-bs-target="#joining">
-            <strong> Join </strong>
+            Join
           </button>
         </div>
-        <img class="img-fluid w-50 d-none d-sm-block rounded-3 mt-4 mx-3" src="/public/memberstogether1.png"
+        <img class="img-fluid w-50 d-none d-sm-block rounded-3 mt-4 mx-2" src="/public/memberstogether1.png"
           alt="Galactech Logo" />
       </div>
     </div>
@@ -102,7 +102,7 @@
 
   <!--Cards-->
 
-  <section class="p-4 bg-dark">
+  <section class="p-5 bg-dark">
     <div class="container">
       <div class="row text-center g-4">
         <div class="col-md mt-5">
@@ -175,7 +175,7 @@
             advanced jobs in the future. Find out more about robotics, FTC,
             and Galactech.
           </p>
-          <a href="/details" class="btn btn-light mt-5">
+          <a href="details.html" class="btn btn-light mt-5">
             <i class="bi bi-chevron-right"></i>Read More
           </a>
         </div>
@@ -205,115 +205,100 @@
 
   <!--Meet the Team-->
   <section id="meetTheTeam" class="p-5 bg-primary">
-    <div class="container">
+    <div class="container p-5">
       <h2 class="text-center text-white">Meet the Team</h2>
       <p class="lead text-center text-white mb-5">
         Our team is working hard to bring to you the future
       </p>
       <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="card bg-light fade-in">
-            <div class="card-body text-center">
-              <img src="/public/galactechlogo.png" class="rounded-circle mb-3 w-50" alt="Logo" />
-              <h3 class="card-title mb-3">Galactech Main Contact</h3>
-              <p class="card-text">
-                This is the main point of contact. Can be used for
-                partnerships/questions/etc
-              </p>
-              <a href="/contact"><i class="bi bi-phone text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-envelope text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-instagram text-dark mx-1"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="card bg-light fade-in" data-delay="100">
             <div class="card-body text-center">
-              <img src="/public/ethanprofile.png" class="rounded-circle mb-3 w-50" alt="Picture of Ethan" />
+              <img src="/public/ethanprofile.png" class="rounded-circle mb-5 w-75" alt="Picture of Ethan" />
               <h3 class="card-title mb-3">Ethan Lee</h3>
               <p class="card-text">
                 I'm a builder who also dabbles a little bit in code. I dislike
                 work being finished late. One hobby of mine is playing sports.
               </p>
-              <a href="/contact"><i class="bi bi-discord text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-instagram text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-phone text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-discord text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-phone text-dark mx-1"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="card bg-light fade-in" data-delay="200">
             <div class="card-body text-center">
-              <img src="/public/siddprofile1.png" class="rounded-circle mb-3 w-50" alt="Picture of Sidd" />
+              <img src="/public/siddprofile1.png" class="rounded-circle mb-3 w-75" alt="Picture of Sidd" />
               <h3 class="card-title mb-3">Sidd Woddi</h3>
               <p class="card-text">
-                I primarily work as a builder and CADer for the team. Outside
+                I primarily work as a builder and CADer for Galactech. Outside
                 of robotics, I enjoy skiing and karate.
               </p>
-              <a href="/contact"><i class="bi bi-discord text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-instagram text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-phone text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-discord text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-phone text-dark mx-1"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="card bg-light fade-in" data-delay="300">
             <div class="card-body text-center">
-              <img src="/public/johaan.png" class="rounded-circle mb-3 w-50" alt="Picture of Johaan" />
-              <h3 class="card-title mb-3">Johaan Mannanal</h3>
+              <img src="/public/johaan.png" class="rounded-circle mb-3 w-75" alt="Picture of Johaan" />
+              <h3 class="card-title mb-3">Johaan M</h3>
               <p class="card-text">
-                I am interested in coding, web3, business, astrophysics, and
+                I am interested in coding, AI, business, astrophysics, and
                 finance. My hobbies are photography and watching Marvel
                 movies.
               </p>
-              <a href="/contact"><i class="bi bi-discord text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-instagram text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-phone text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-discord text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-phone text-dark mx-1"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="card bg-light fade-in">
             <div class="card-body text-center">
-              <img src="/public/lenaprofile1.png" class="rounded-circle mb-3 w-50" alt="Picture of Lena" />
+              <img src="/public/lenaprofile1.png" class="rounded-circle mb-3 w-75" alt="Picture of Lena" />
               <h3 class="card-title mb-3">Lena Manjali</h3>
               <p class="card-text">
-                My primary area of work is in the Outreach subgroup. I do
-                competitive swimming, and I like to read in my free time. Go
+                My main area of work is in the Outreach subgroup. I competitively swim, and I like to read in my free
+                time. Go
                 Galactech!!
               </p>
-              <a href="/contact"><i class="bi bi-discord text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-instagram text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-phone text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-discord text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-phone text-dark mx-1"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="card bg-light fade-in" data-delay="100">
             <div class="card-body text-center">
-              <img src="/public/laurenprofile1.png" class="rounded-circle mb-3 w-50" alt="Picture of Lauren" />
+              <img src="/public/laurenprofile1.png" class="rounded-circle mb-3 w-75" alt="Picture of Lauren" />
               <h3 class="card-title mb-3">Lauren Kim</h3>
               <p class="card-text">
                 I'm one of the people to work in outreach. I love to play
                 sports and read! Being apart of this robotics team is so much
                 fun!
               </p>
-              <a href="/contact"><i class="bi bi-discord text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-phone text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-discord text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-phone text-dark mx-1"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="card bg-light fade-in" data-delay="200">
             <div class="card-body text-center">
-              <img src="/public/rhoneprofile.png" class="rounded-circle mb-3 w-50" alt="Picture of Rhone" />
+              <img src="/public/rhoneprofile.png" class="rounded-circle mb-3 w-75" alt="Picture of Rhone" />
               <h3 class="card-title mb-3">Rhone Eiler</h3>
               <p class="card-text">
-                I am a freelance software, frontend, and backend developer. I
-                also make solo films as a hobby
+                I am a freelancer. Work as a software, frontend, and backend developer. I
+                also make solo films in my free time.
               </p>
-              <a href="/contact"><i class="bi bi-discord text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-phone text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-discord text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-phone text-dark mx-1"></i></a>
             </div>
           </div>
         </div>
@@ -323,51 +308,51 @@
 
   <!--Meet the Mentors-->
   <section id="meetTheTeam" class="p-5 bg-secondary">
-    <div class="container">
+    <div class="container p-5">
       <h2 class="text-center text-white">Meet the Mentors</h2>
       <p class="lead text-center text-white mb-5">
         The Group of people making this possible
       </p>
       <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="card bg-light fade-in" data-delay="100">
             <div class="card-body text-center">
-              <img src="https://via.placeholder.com/1" class="rounded-circle mb-3 w-50" alt="Picture of Tarak Woddi" />
+              <img src="https://via.placeholder.com/1" class="rounded-circle mb-3 w-75" alt="Picture of Tarak Woddi" />
               <h3 class="card-title mb-3">Tarak Woddi</h3>
               <p class="card-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus quidem minus omnis corrupti sequi ratione!
               </p>
-              <a href="/contact"><i class="bi bi-envelope text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-phone text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-phone text-dark mx-1"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="card bg-light fade-in" data-delay="200">
             <div class="card-body text-center">
-              <img src="/public/onnprofile1.png" class="rounded-circle mb-3 w-50" alt="Picture of Onn Lee" />
+              <img src="/public/onnprofile1.png" class="rounded-circle mb-3 w-75" alt="Picture of Onn Lee" />
               <h3 class="card-title mb-3">Onn Lee</h3>
               <p class="card-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus quidem minus omnis corrupti sequi ratione!
               </p>
-              <a href="/contact"><i class="bi bi-envelope text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-phone text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-phone text-dark mx-1"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="card bg-light fade-in" data-delay="300">
             <div class="card-body text-center">
-              <img src="/public/vishalprofile1.png" class="rounded-circle mb-3 w-50" alt="Picture of Vishal Mannanal" />
+              <img src="/public/vishalprofile1.png" class="rounded-circle mb-3 w-75" alt="Picture of Vishal Mannanal" />
               <h3 class="card-title mb-3">Vishal Mannanal</h3>
               <p class="card-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus quidem minus omnis corrupti sequi ratione!
               </p>
-              <a href="/contact"><i class="bi bi-envelope text-dark mx-1"></i></a>
-              <a href="/contact"><i class="bi bi-phone text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-envelope text-dark mx-1"></i></a>
+              <a href="ContactInformation.html"><i class="bi bi-phone text-dark mx-1"></i></a>
             </div>
           </div>
         </div>
@@ -377,7 +362,7 @@
 
   <!--Frequently Asked Questions-->
   <section id="FAQ" class="p-5">
-    <div class="container">
+    <div class="container p-5">
       <h2 class="text-center mb-4">Frequently Asked Questions</h2>
       <div class="accordion accordion-flush" id="FAQ">
         <div class="accordion-item">
@@ -388,7 +373,7 @@
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-            <div class="accordion-body bg-secondary text-light rounded-bottom">
+            <div class="accordion-body">
               FTC stands for FIRST Tech Challenge. Teams of primarily high
               schoolers make robots using multiple skills. These robots will
               perform a specified task by the organization "FIRST". As teams
@@ -406,7 +391,7 @@
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-            <div class="accordion-body bg-secondary text-light rounded-bottom">
+            <div class="accordion-body">
               Building a robot is a difficult task, and mirrors a job. The
               amount of time required varies greatly. This is due to factors
               like team size, goal, age, and time of the year. It would
@@ -422,7 +407,7 @@
             </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-            <div class="accordion-body bg-secondary text-light rounded-bottom">
+            <div class="accordion-body">
               Robotics requires the initial skills of leadership, teamwork,
               and hardwork. As your FTC experience progresses, you will learn
               hardware and/or coding and/or outreach skills.
@@ -437,7 +422,7 @@
             </button>
           </h2>
           <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-            <div class="accordion-body bg-secondary text-light rounded-bottom">
+            <div class="accordion-body">
               Many of the members of FTC have either done some sort of
               robotics in the past, specifically FLL (FIRST Lego League). If
               you dont have any experience in robotics whatsoever, this is
@@ -454,7 +439,7 @@
             </button>
           </h2>
           <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-            <div class="accordion-body bg-secondary text-light rounded-bottom">
+            <div class="accordion-body">
               The age requirements for FTC are 8th grade to 12th grade. Teams
               can have 18+ mentors, and Galactech has a couple of them. The
               mentors guide the inexperienced team.
@@ -469,7 +454,7 @@
             </button>
           </h2>
           <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-            <div class="accordion-body bg-secondary text-light rounded-bottom">
+            <div class="accordion-body">
               The Galactech FTC team contains 6 people, but it can go way
               above this.
             </div>
@@ -481,7 +466,7 @@
 
   <!--Sponsor-->
   <section id="sponsor" class="p-5 bg-dark text-light">
-    <div class="container fade-in">
+    <div class="container fade-in p-5">
       <div class="row align-items-center justify-content-between">
         <div class="col-md p-5">
           <h2>Sponsor</h2>
@@ -495,7 +480,7 @@
             tempora sapiente quo ratione corrupti libero temporibus. Error
             expedita ullam corporis illum?
           </p>
-          <a href="/sponsor" class="btn btn-light mt-5">
+          <a href="sponsor.html" class="btn btn-light mt-5">
             <i class="bi bi-chevron-right"></i>Read More
           </a>
         </div>
@@ -508,7 +493,7 @@
 
   <!--Join-->
   <section id="join" class="p-5 bg-primary text-light">
-    <div class="container fade-in">
+    <div class="container fade-in pt-5 p-1">
       <div class="row align-items-center justify-content-between">
         <div class="col-md p-5">
           <img src="/public/coderphoto1.png" class="img-fluid" alt="Person Coding" />
@@ -525,7 +510,7 @@
             tempora sapiente quo ratione corrupti libero temporibus. Error
             expedita ullam corporis illum?
           </p>
-          <a href="/join" class="btn btn-light mt-5">
+          <a href="join.html" class="btn btn-light mt-5">
             <i class="bi bi-chevron-right"></i>Read More
           </a>
         </div>
@@ -533,9 +518,9 @@
     </div>
   </section>
 
-  <!--Donate-->
+  <!--Donate
   <section id="donate" class="p-5 text-center">
-    <div class="container fade-in">
+    <div class="container fade-in p-5">
       <div class="row g-4">
         <div class="col-md">
           <h2 class="text-center mb-4">Donate</h2>
@@ -548,10 +533,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <!--Question/Suggestion Submittion-->
-  <section class="bg-primary text-light p-5">
+  <section class="bg-primary text-light pt-1 p-5">
     <div class="container">
       <form action="/api/question" class="js-form">
         <div class="d-md-flex justify-content-between align-items-center">
@@ -567,7 +552,7 @@
   </section>
 
   <!--footer-->
-  <footer class="py-3 bg-dark text-white text-center position relative">
+  <footer class="py-4 bg-dark text-white text-center position relative">
     <div class="container">
       <p class="lead pt-2">2022 Galactech FTC Team</p>
     </div>
@@ -586,7 +571,7 @@
         <form action="/api/sponsor" class="js-form">
           <div class="modal-body">
             <p class="lead">Fil out this form and we will get back to you!</p>
-            <a href="/sponsor">Click this link first</a>
+            <a href="sponsor.html">Click this link first</a>
 
             <div class="mb-3">
               <label for="first-name" class="col-form-label">First Name</label>
@@ -630,7 +615,7 @@
         <form action="/api/join" class="js-form">
           <div class="modal-body">
             <p class="lead">Fill out this form and we will get back to you!</p>
-            <a href="/join">Click this link first</a>
+            <a href="join.html">Click this link first</a>
             <div class="mb-3">
               <label for="first-name" class="col-form-label">First Name</label>
               <input type="text" class="form-control" id="first-name" />
