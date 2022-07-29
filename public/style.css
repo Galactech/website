@@ -58,7 +58,7 @@ body::before {
   color: white;
   background-color: rgb(125, 0, 255);
   border: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease;
 }
 
@@ -70,19 +70,19 @@ body::before {
 .purp-btn:hover {
   border: none;
   color: white;
-  background-color: rgb(140, 30, 255);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgb(125, 0, 255);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .purp-btn:active {
   border: none;
   color: white;
-  background-color: rgb(68, 0, 135);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgb(88, 0, 182);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .shadow {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
 }
 
 .crop {
