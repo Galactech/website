@@ -40,15 +40,15 @@ body::before {
 }
 
 .background-grow {
-  animation: grow 5s ease infinite alternate;
+  animation: grow 3s ease infinite alternate;
 }
 
 @keyframes grow {
   0% {
-    transform: scale(150%);
+    transform: scale(140%);
   }
   100% {
-    transform: scale(200%);
+    transform: scale(180%);
   }
 }
 .purp {
