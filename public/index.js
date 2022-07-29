@@ -78,3 +78,14 @@ document.querySelectorAll("form.js-form").forEach((el) => {
     },
   );
 });
+
+document.querySelectorAll("[data-copy]").forEach((el) => {
+  const text = el.dataset.copy;
+  el.addEventListener("click", () => {
+    navigator.clipboard.writeText(text).then(() => {
+      window.alert(`Copied ${text} to clipboard!`);
+    }).catch(() => {
+      window.alert("Oh noes! An unknown error occured.");
+    });
+  });
+});

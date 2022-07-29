@@ -66,9 +66,8 @@
           </h1>
           <p class="lead my-5 mx-3 text-dark">
             <strong>
-              We are a team started in 2022. As a team of
-              6 hardworking individuals, we are striving to deliver the best
-              engineered robots
+              We are a FTC Robotics team that was founded in 2022. We are a 6 person team that strives to spread STEM
+              education and create a positive robotics environment. We are based in Renton, Washington.
             </strong>
           </p>
           <button class="btn purp-btn btn-lg mx-4 my-3" data-bs-toggle="modal" data-bs-target="#enroll">
@@ -84,15 +83,15 @@
     </div>
   </section>
 
-  <!--Email Submittion-->
+  <!--Question/Suggestion Submittion-->
   <section class="purp-bg text-light p-5">
     <div class="container">
-      <form action="/api/email" class="js-form">
+      <form action="/api/question" class="js-form">
         <div class="d-md-flex justify-content-between align-items-center">
-          <h3 class="mb-3mb-md-0">Sign Up For More Information</h3>
+          <h3 class="mb-3mb-md-0">Type A Question Or Suggestion Here</h3>
 
           <div class="input-group news-input">
-            <input type="email" class="form-control" placeholder="Enter Email" id="email" />
+            <textarea class="form-control" placeholder="Enter Question/Suggestion" id="question" rows="1"></textarea>
             <button class="btn btn-dark btn-lg" type="submit">Send</button>
           </div>
         </div>
@@ -113,7 +112,7 @@
               </div>
               <h3 class="card-title mb-3">The Team</h3>
               <p class="card-text">
-                A group of high schoolers, that are interested and invested in
+                A group of students, that are interested and invested in
                 science, technology, and solving problems.
               </p>
               <a href="#meetTheTeam" class="btn purp-btn">Explore</a>
@@ -155,6 +154,108 @@
     </div>
   </section>
 
+  <!--Frequently Asked Questions-->
+  <section id="FAQ" class="p-5">
+    <div class="container p-5">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion accordion-flush" id="FAQ">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne">
+              What is FTC?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+            <div class="accordion-body">
+              FTC stands for FIRST Tech Challenge. Teams of primarily high
+              schoolers make robots using multiple skills. These robots will
+              perform a specified task by the organization "FIRST". As teams
+              win rounds, they move up in ranks, aiming for winning the world
+              competition. Teams will be using leadership, coordination,
+              teamwork, software skills, hardware skills, and outreach skills.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo">
+              If I joined FTC, how much time would I spend?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+            <div class="accordion-body">
+              Building a robot is a difficult task, and mirrors a job. The
+              amount of time required varies greatly. This is due to factors
+              like team size, goal, age, and time of the year. It would
+              generally range from 6 hours a week to 60 hours.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree">
+              What skills can I learn from this?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+            <div class="accordion-body">
+              Robotics requires the initial skills of leadership, teamwork,
+              and hardwork. As your FTC experience progresses, you will learn
+              hardware and/or coding and/or outreach skills.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour">
+              Do I need to have previous experience to join?
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+            <div class="accordion-body">
+              Many of the members of FTC have either done some sort of
+              robotics in the past, specifically FLL (FIRST Lego League). If
+              you dont have any experience in robotics whatsoever, this is
+              fine. Refining current knowledge of technology and using logic
+              will equip you with needed skills.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive">
+              How old do I have to be?
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+            <div class="accordion-body">
+              The age requirements for FTC are 12-18. Teams usually have a few adult mentors to guide them. There are
+              also other option for different ages: FRC(14-18), FLL(8-12).
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix">
+
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+            <div class="accordion-body">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!--Explanation of FTC/Robotics-->
   <section id="details" class="p-5 bg-dark">
     <div class="container">
@@ -182,25 +283,21 @@
     </div>
   </section>
 
-  <!--Timeline
-    <section id="timeline" class="p-5 text-center">
-      <div class="container">
-        <div class="row g-4">
-          <h2 class="text-center mb-4">Timeline</h2>
-          <ul class="list-group list-group-flush lead">
-            A video That summarizes this team
-          </ul>
-          <iframe
-            id="timelinevideoframe"
-            title="Timeline of Robotics Team"
-            width="300"
-            height="200"
-            src="https://www.youtube.com/watch?v=iik25wqIuFo"
-          >
-          </iframe>
+  <!--Email Submittion-->
+  <section class="purp-bg text-light p-5">
+    <div class="container">
+      <form action="/api/email" class="js-form">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3mb-md-0">Sign Up For More Information</h3>
+
+          <div class="input-group news-input">
+            <input type="email" class="form-control" placeholder="Enter Email" id="email" />
+            <button class="btn btn-dark btn-lg" type="submit">Send</button>
+          </div>
         </div>
-      </div>
-    </section>-->
+      </form>
+    </div>
+  </section>
 
   <!--Meet the Team-->
   <section id="meetTheTeam" class="p-5 purp-bg">
@@ -361,191 +458,7 @@
     </div>
   </section>
 
-  <!--Frequently Asked Questions-->
-  <section id="FAQ" class="p-5">
-    <div class="container p-5">
-      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-      <div class="accordion accordion-flush" id="FAQ">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne">
-              What is FTC?
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-            <div class="accordion-body">
-              FTC stands for FIRST Tech Challenge. Teams of primarily high
-              schoolers make robots using multiple skills. These robots will
-              perform a specified task by the organization "FIRST". As teams
-              win rounds, they move up in ranks, aiming for winning the world
-              competition. Teams will be using leadership, coordination,
-              teamwork, software skills, hardware skills, and outreach skills.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo">
-              If I joined FTC, how much time would I spend?
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-            <div class="accordion-body">
-              Building a robot is a difficult task, and mirrors a job. The
-              amount of time required varies greatly. This is due to factors
-              like team size, goal, age, and time of the year. It would
-              generally range from 6 hours a week to 60 hours.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree">
-              What skills can I learn from this?
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-            <div class="accordion-body">
-              Robotics requires the initial skills of leadership, teamwork,
-              and hardwork. As your FTC experience progresses, you will learn
-              hardware and/or coding and/or outreach skills.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFour">
-              Do I need to have previous experience to join?
-            </button>
-          </h2>
-          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-            <div class="accordion-body">
-              Many of the members of FTC have either done some sort of
-              robotics in the past, specifically FLL (FIRST Lego League). If
-              you dont have any experience in robotics whatsoever, this is
-              fine. Refining current knowledge of technology and using logic
-              will equip you with needed skills.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFive">
-              What are the age requirements to join?
-            </button>
-          </h2>
-          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-            <div class="accordion-body">
-              The age requirements for FTC are 8th grade to 12th grade. Teams
-              can have 18+ mentors, and Galactech has a couple of them. The
-              mentors guide the inexperienced team.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingSix">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseSix">
-              What is the average team size?
-            </button>
-          </h2>
-          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-            <div class="accordion-body">
-              The Galactech FTC team contains 6 people, but it can go way
-              above this.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!--Sponsor-->
-  <section id="sponsor" class="p-5 bg-dark text-light">
-    <div class="container fade-in p-5">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md p-5">
-          <h2>Sponsor</h2>
-          <p class="lead mt-3">
-            Sponsor the FTC Robotics team, Galactech, to fuel technoligcal ambition in the future generation.
-          </p>
-          <p class="mt-4">
-            Click the link below to get information on what, who, and why you should Sponsor. You will also give
-            yourself the oppurtunity to put yourself in contact with our team.
-          </p>
-          <a href="/sponsor" class="btn btn-light mt-5">
-            <i class="bi bi-chevron-right"></i>Read More
-          </a>
-        </div>
-        <div class="col-md">
-          <img src="/public/coder-clipart-8.jpg" class="img-fluid d-none d-sm-block" alt="Person Coding" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--Join-->
-  <section id="join" class="p-5 purp-bg text-light">
-    <div class="container fade-in pt-5 p-1">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md p-5">
-          <img src="/public/coderphoto1.png" class="img-fluid d-none d-sm-block" alt="Person Coding" />
-        </div>
-        <div class="col-md">
-          <h2>Join</h2>
-          <p class="lead mt-3">
-            Join a FTC Robotics team today!
-          </p>
-          <p class="mt-4">
-            Click the link below to get information on why and what you get when you sign up for ftc robotics. It will
-            also give you brief information on how to join and give you the oppurtunity to put yourself in contact with
-            us.
-          </p>
-          <a href="/join" class="btn btn-light mt-5">
-            <i class="bi bi-chevron-right"></i>Read More
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--Donate
-  <section id="donate" class="p-5 text-center">
-    <div class="container fade-in p-5">
-      <div class="row g-4">
-        <div class="col-md">
-          <h2 class="text-center mb-4">Donate</h2>
-          <ul class="list-group list-group-flush lead">
-            <li class="list-group-item">
-              <span class="fw-bold">Fuel the Future</span>
-              Lorem ipsum dolor sit amet consectetur.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>-->
-
-  <!--Question/Suggestion Submittion-->
-  <section class="purp-bg text-light pt-1 p-5">
-    <div class="container">
-      <form action="/api/question" class="js-form">
-        <div class="d-md-flex justify-content-between align-items-center">
-          <h3 class="mb-3mb-md-0">Type A Question Or Suggestion Here</h3>
-
-          <div class="input-group news-input">
-            <textarea class="form-control" placeholder="Enter Question/Suggestion" id="question" rows="1"></textarea>
-            <button class="btn btn-dark btn-lg" type="submit">Send</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </section>
 
   <!--footer-->
   <footer class="py-4 bg-dark text-white text-center position relative">
