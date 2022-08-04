@@ -52,32 +52,32 @@ body::before {
   }
 }
 .purp {
-  color: rgb(125, 0, 255);
+  color: rgb(91, 2, 186);
 }
 .purp-btn {
   color: white;
-  background-color: rgb(125, 0, 255);
+  background-color: rgb(91, 2, 186);
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease;
 }
 
 .purp-bg {
-  background-color: rgb(125, 0, 255);
+  background-color: rgb(91, 2, 186);
   border: none;
 }
 
 .purp-btn:hover {
   border: none;
   color: white;
-  background-color: rgb(125, 0, 255);
+  background-color: rgb(91, 2, 186);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .purp-btn:active {
   border: none;
   color: white;
-  background-color: rgb(88, 0, 182);
+  background-color: rgb(61, 0, 127);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
