@@ -26,7 +26,7 @@ app.get("/join", async (c) => {
 });
 
 app.get("/contact", async (c) => {
-  await c.render("ContactInformation.html", {});
+  await c.render("contact.html", {});
 });
 
 app.get("/details", async (c) => {
