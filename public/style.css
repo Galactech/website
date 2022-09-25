@@ -97,3 +97,7 @@ body::before {
 #more2 {
   display: none;
 }
+
+.navbar {
+  background-color: rgba(9, 0, 35, 0.7) !important;
+}
