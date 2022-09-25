@@ -92,3 +92,8 @@ body::before {
 .spacer {
   height: 100px;
 }
+
+#more,
+#more2 {
+  display: none;
+}
