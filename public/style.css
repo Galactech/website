@@ -100,4 +100,5 @@ body::before {
 
 .navbar {
   background-color: rgba(9, 0, 35, 0.7) !important;
+  background-color: rgb(0, 0, 0) !important;
 }
