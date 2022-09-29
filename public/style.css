@@ -102,3 +102,21 @@ body::before {
   background-color: rgba(9, 0, 35, 0.7);
   background-color: rgb(0, 0, 0) !important;
 }
+
+.contact-hidden {
+  display: none;
+}
+
+.contact-show:hover {
+  display: none;
+  animation: 1s linear infinite;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(140%);
+  }
+  100% {
+    transform: scale(180%);
+  }
+}

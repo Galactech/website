@@ -71,13 +71,15 @@ document.querySelectorAll("form.js-form").forEach((el) => {
             document
               .querySelectorAll('[data-bs-dismiss="modal"]')
               .forEach((el) => el.click());
-            window.alert("Form sent successfully!");
+            window.alert("Form sent successfully, we will email you with a response shortly");
           }
         })
         .catch(console.error);
     },
   );
 });
+
+//if a ? is entered, ask for email
 
 document.querySelectorAll("[data-copy]").forEach((el) => {
   const text = el.dataset.copy;
