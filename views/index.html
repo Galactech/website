@@ -32,11 +32,13 @@
 
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="javascript:void(0);" class="nav-link mx-1 contact-show">Contact</a>
-            <!--<a href="/maincontact" class="nav-link mx-1 contact-hidden">Galactech</a>
-            <a href="/memberscontact" class="nav-link mx-1 contact-hidden">Members</a>
-            <a href="/mentorscontact" class="nav-link mx-1 contact-hidden">Mentors</a>-->
+          <li class="nav-item dropdown">
+            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/maincontact">Main Contact</a></li>
+              <li><a class="dropdown-item" href="/memberscontact">Members</a></li>
+              <li><a class="dropdown-item" href="/mentorscontact">Mentors</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="/details" class="nav-link mx-1">Details</a>
