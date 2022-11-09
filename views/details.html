@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <nav class="autohide navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top autohide">
+  <nav class="autohide navbar navbar-expand-lg navbar-dark py-3 fixed-top">
     <div class="container">
       <a href="/" class="navbar-brand">
         <img width="40" height="40" class="rounded-circle" src="/public/galactechlogo.png" alt="Galactech Logo" /></a>
@@ -30,14 +30,15 @@
 
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="#robotics" class="nav-link mx-1">Robotics</a>
-          </li>
-          <li class="nav-item">
-            <a href="#FTC" class="nav-link mx-1">FTC</a>
-          </li>
-          <li class="nav-item">
-            <a href="#galactech" class="nav-link mx-1">Galactech</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Jump To</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#robotics">Robotics</a></li>
+              <li><a class="dropdown-item" href="#FTC">FTC</a></li>
+              <li><a class="dropdown-item" href="#galactech">Galactech</a></li>
+              <li><a class="dropdown-item" href="#sponsor">Sponsor</a></li>
+              <li><a class="dropdown-item" href="#join">Join</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -222,7 +223,7 @@
       <div class="row align-items-center justify-content-between">
         <div class="col-md p-5">
           <p class="lead px-5">
-            The age for FLL(FIRST Lego League) is 8-12, FTC(FIRS T Tech Challenge) is 7-12, FRC(FIRST Robotics
+            The grade level for FLL(FIRST Lego League) is 3-10, FTC(FIRS T Tech Challenge) is 7-12, FRC(FIRST Robotics
             Competition) is 9-12. You can join your school team, or get in contact with us to help
             you find custom teams. You may also start an FTC team with
             friends. You may also qualify for joining this specific team

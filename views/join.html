@@ -18,7 +18,8 @@
 </head>
 
 <body>
-  <nav class="autohide navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+
+  <nav class="autohide navbar navbar-expand-lg navbar-dark py-3 fixed-top">
     <div class="container">
       <a href="/" class="navbar-brand">
         <img width="40" height="40" class="rounded-circle" src="/public/galactechlogo.png" alt="Galactech Logo" /></a>
@@ -27,20 +28,16 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="#summary" class="nav-link">Summary</a>
-          </li>
-          <li class="nav-item">
-            <a href="#initial" class="nav-link">Initial</a>
-          </li>
-          <li class="nav-item">
-            <a href="#result" class="nav-link">Result</a>
-          </li>
-          <li class="nav-item">
-            <a href="#join" class="nav-link">Join</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Jump To</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#summary">Summary</a></li>
+              <li><a class="dropdown-item" href="#initial">Initial</a></li>
+              <li><a class="dropdown-item" href="#result">Result</a></li>
+              <li><a class="dropdown-item" href="#join">Join</a></li>
+            </ul>
           </li>
         </ul>
       </div>
