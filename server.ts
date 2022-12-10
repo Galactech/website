@@ -113,6 +113,36 @@ app.post("/api/join", async (c) => {
 
 app.post("/api/question", async (c) => {
   const body = (await c.request.json());
+  const {
+    "fullname": fullname,
+    email,
+    suggestion,
+  } = body;
+
+  await webhook.createMessage("<@&1001397109070766161>", {
+    avatar_url:
+      "https://github.com/JohaanMannanal/futureraiders/blob/main/galactechlogo.png?raw=true",
+    username: "Robotics Notification",
+    embeds: [{
+      author: {
+        name: "Robotics Notification",
+        url:
+          "https://github.com/JohaanMannanal/futureraiders/blob/main/galactechlogo.png?raw=true",
+      },
+      color: 11342935,
+      description: `**Member**
+        Name: ${fullname}
+        Email: ${email}
+        Suggestion/Question: ${suggestion}`,
+    }],
+  });
+  c.json({
+    success: true,
+  });
+});
+
+/*app.post("/api/question", async (c) => {
+  const body = (await c.request.json());
 
   const { question } = body;
 
@@ -134,7 +164,7 @@ app.post("/api/question", async (c) => {
   c.json({
     success: true,
   });
-});
+});*/
 
 app.post("/api/email", async (c) => {
   const body = (await c.request.json());
